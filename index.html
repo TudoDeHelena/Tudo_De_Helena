@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -772,259 +773,26 @@
   </header>
 
   <nav>
-    <a href="#pegue">Pegue e Monte</a>
-    <a href="#mesa">Montagem</a>
-    <a href="#festa">Festa na Mesa</a>
-    <a href="#doces">Doces</a>
-    <a href="#bolos">Bolos</a>
-    <a href="#adicionais">Adicionais</a>
+    <a href="#catalogo">Catálogo</a>
     <a href="#pagamento">Pagamento</a>
+    <a href="#finalizar">Finalizar</a>
   </nav>
 
-  <section id="pegue">
+  <section id="catalogo">
     <div class="section-title">
-      <h2>Kit Pegue e Monte</h2>
-      <p>Opções práticas para montar sua festa com charme e economia.</p>
+      <h2>Catálogo</h2>
+      <p>Produtos carregados automaticamente da planilha Google Sheets.</p>
     </div>
 
     <div class="aviso">
-      Clique em “Selecionar” nos itens desejados. O site te guia suavemente para a próxima categoria.
+      Para alterar produtos, descrições ou preços, edite diretamente a planilha. O site será atualizado automaticamente ao recarregar.
     </div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Bronze</h3>
-        <div class="price">R$180,00</div>
-        <ul>
-          <li>Painel redondo + capa</li>
-          <li>3 cilindros + capa</li>
-          <li>Tapete</li>
-          <li>2 vasos na cor do tema + buchinhos</li>
-          <li>Bandejas para doces na cor do tema</li>
-          <li>Boleira na cor do tema</li>
-          <li>Meio arco de bexigas</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Kit Pegue e Monte - Bronze', 180)">Selecionar</button>
-      </div>
-
-      <div class="card">
-        <h3>Prata</h3>
-        <div class="price">R$220,00</div>
-        <ul>
-          <li>Painel redondo + capa</li>
-          <li>3 cilindros + capa</li>
-          <li>Tapete</li>
-          <li>2 vasos na cor do tema + buchinhos</li>
-          <li>Bandejas para doces na cor do tema</li>
-          <li>Arco de bexigas completo</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Kit Pegue e Monte - Prata', 220)">Selecionar</button>
-      </div>
-
-      <div class="card">
-        <h3>Ouro</h3>
-        <div class="price">R$280,00</div>
-        <ul>
-          <li>Painel redondo + capa</li>
-          <li>3 cilindros + capa</li>
-          <li>Tapete</li>
-          <li>2 vasos na cor do tema + buchinhos</li>
-          <li>Bandejas para doces na cor do tema</li>
-          <li>Boleira</li>
-          <li>Escadinha para lembrancinhas</li>
-          <li>Arco de bexigas completo</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Kit Pegue e Monte - Ouro', 280)">Selecionar</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="mesa">
-    <div class="section-title">
-      <h2>Montagem de Mesa</h2>
-      <p>Soluções completas para uma decoração ainda mais especial.</p>
+    <div id="statusProdutos" class="aviso">
+      Carregando produtos...
     </div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Classic</h3>
-        <div class="price">R$450,00</div>
-        <ul>
-          <li>Painel redondo + capa</li>
-          <li>3 cilindros + capa</li>
-          <li>Tapete</li>
-          <li>Vasos na cor do tema com flores</li>
-          <li>Displays</li>
-          <li>Bandejas na cor do tema</li>
-          <li>Boleira</li>
-          <li>Escadinha</li>
-          <li>Arco de bexigas desconstruído</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Montagem de Mesa - Classic', 450)">Selecionar</button>
-      </div>
-
-      <div class="card">
-        <h3>Premium</h3>
-        <div class="price">A partir de R$650,00</div>
-        <ul>
-          <li>Painel redondo + capa</li>
-          <li>Painel romano + capa</li>
-          <li>3 cilindros + capa</li>
-          <li>Mesa de centro</li>
-          <li>Tapete</li>
-          <li>Vasos com flores</li>
-          <li>Displays em LED</li>
-          <li>Estante para lembrancinhas</li>
-          <li>Bandejas para doces</li>
-          <li>Boleira</li>
-          <li>Arco de bexigas desconstruído</li>
-          <li>Arrumação da mesa dos convidados</li>
-          <li>Arrumação da entrada da festa</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Montagem de Mesa - Premium', 650)">Selecionar</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="festa">
-    <div class="section-title">
-      <h2>Kit Festa na Mesa</h2>
-      <p>Perfeito para comemorações compactas e cheias de encanto.</p>
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Opção 1</h3>
-        <div class="price">R$60,00</div>
-        <ul>
-          <li>Painel 50x50 no tema</li>
-          <li>Mini arco de balões</li>
-          <li>Bandejas</li>
-          <li>Número da idade</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Kit Festa na Mesa - Opção 1', 60)">Selecionar</button>
-      </div>
-
-      <div class="card">
-        <h3>Opção 2</h3>
-        <div class="price">R$90,00</div>
-        <ul>
-          <li>Painel 50x50 no tema</li>
-          <li>Mini arco de balões</li>
-          <li>Mesa balcão</li>
-          <li>Bandejas</li>
-          <li>Número da idade</li>
-          <li>Nome do aniversariante</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Kit Festa na Mesa - Opção 2', 90)">Selecionar</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="doces">
-    <div class="section-title">
-      <h2>Doces e Sobremesas</h2>
-      <p>A pessoa pode escolher mais de uma opção e seguir quando desejar.</p>
-    </div>
-
-    <div class="aviso">
-      Você pode selecionar quantas sobremesas quiser. Esta categoria não avança automaticamente.
-    </div>
-
-    <div class="menu-list">
-      <div class="menu-item">
-        <div class="menu-info"><span>Pavê Tradicional</span> <strong>R$85,00</strong></div>
-        <button class="small-btn" onclick="toggleItem(this, 'Pavê Tradicional', 85)">Selecionar</button>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-info"><span>Pavê Sonho de Valsa</span> <strong>R$110,00</strong></div>
-        <button class="small-btn" onclick="toggleItem(this, 'Pavê Sonho de Valsa', 110)">Selecionar</button>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-info"><span>Bombom de Uva Cremoso</span> <strong>R$95,00</strong></div>
-        <button class="small-btn" onclick="toggleItem(this, 'Bombom de Uva Cremoso', 95)">Selecionar</button>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-info"><span>Mousse de Maracujá com Ganache</span> <strong>R$95,00</strong></div>
-        <button class="small-btn" onclick="toggleItem(this, 'Mousse de Maracujá com Ganache', 95)">Selecionar</button>
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-info"><span>Gelatina Recheada</span> <strong>R$75,00</strong></div>
-        <button class="small-btn" onclick="toggleItem(this, 'Gelatina Recheada', 75)">Selecionar</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="bolos">
-    <div class="section-title">
-      <h2>Bolos Especiais</h2>
-      <p>Formato 3 — aproximadamente 2,5 kg a 3 kg.</p>
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Bolo de Coco Gelado</h3>
-        <div class="price">R$90,00</div>
-        <p>Recheio cremoso de coco.</p>
-        <button class="select-btn" onclick="toggleItem(this, 'Bolo de Coco Gelado', 90)">Selecionar</button>
-      </div>
-
-      <div class="card">
-        <h3>Os Queridinhos</h3>
-        <div class="price">R$135,00</div>
-        <p>Recheio cremoso de ninho ou doce de leite com ameixa ou coco.</p>
-        <button class="select-btn" onclick="toggleItem(this, 'Bolo Os Queridinhos', 135)">Selecionar</button>
-      </div>
-
-      <div class="card">
-        <h3>Premium Chocolatudo</h3>
-        <div class="price">R$160,00</div>
-        <p>Recheio cremoso de brigadeiro ou prestígio, com massa e calda de chocolate.</p>
-        <button class="select-btn" onclick="toggleItem(this, 'Bolo Premium Chocolatudo', 160)">Selecionar</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="adicionais">
-    <div class="section-title">
-      <h2>Adicionais</h2>
-      <p>Finalize com doces, salgados ou outros complementos.</p>
-    </div>
-
-    <div class="aviso">
-      Você pode selecionar mais de um adicional. Esta categoria não avança automaticamente.
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Doces</h3>
-        <ul>
-          <li>Brigadeiro — R$120,00 o cento</li>
-          <li>Beijinho — R$120,00 o cento</li>
-          <li>Maçã com cobertura — R$7,00 cada</li>
-          <li>Mini donuts — R$5,00 cada</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Brigadeiro - cento', 120)">Brigadeiro</button>
-        <button class="select-btn" onclick="toggleItem(this, 'Beijinho - cento', 120)">Beijinho</button>
-        <button class="select-btn" onclick="toggleItem(this, 'Maçã com cobertura - unidade', 7)">Maçã</button>
-        <button class="select-btn" onclick="toggleItem(this, 'Mini donuts - unidade', 5)">Mini donuts</button>
-      </div>
-
-      <div class="card">
-        <h3>Salgados</h3>
-        <ul>
-          <li>Torta de frango — R$95,00</li>
-          <li>Torta de sardinha ou atum — R$130,00</li>
-          <li>Salgados fritos — R$160,00 o cento</li>
-        </ul>
-        <button class="select-btn" onclick="toggleItem(this, 'Torta de frango', 95)">Torta de frango</button>
-        <button class="select-btn" onclick="toggleItem(this, 'Torta de sardinha ou atum', 130)">Torta sardinha/atum</button>
-        <button class="select-btn" onclick="toggleItem(this, 'Salgados fritos - cento', 160)">Salgados fritos</button>
-      </div>
+    <div id="produtos-dinamicos">
     </div>
   </section>
 
@@ -1062,6 +830,16 @@
         <p>Essas informações ajudam no atendimento, mas não são obrigatórias para pedir orçamento.</p>
 
         <div class="campos">
+          <div class="campo">
+            <label for="nomeCliente">Seu nome</label>
+            <input type="text" id="nomeCliente" placeholder="Digite seu nome" />
+          </div>
+
+          <div class="campo">
+            <label for="telefoneCliente">Seu telefone</label>
+            <input type="tel" id="telefoneCliente" placeholder="Ex: (11) 99999-9999" />
+          </div>
+
           <div class="campo">
             <label for="dataFesta">Data da festa</label>
             <input type="date" id="dataFesta" />
@@ -1137,8 +915,31 @@
   </div>
 
   <script>
+    const API_URL = "https://script.google.com/macros/s/AKfycbzCZOi3sBG78iZP8VYbUUQ54edtH0dfx18vOEmU2mYHsm8rNgZXp1rsFvzyYKnfQNtU9A/exec";
+    const TELEFONE_WHATSAPP = "5511974230782";
+
     let pedido = [];
     let audioContext;
+    let mapaCategorias = {};
+
+    const ordemCategorias = {
+      "Kit Pegue e Monte": {
+        proxima: "Montagem de Mesa",
+        texto: "Item adicionado. Indo para Montagem de Mesa."
+      },
+      "Montagem de Mesa": {
+        proxima: "Kit Festa na Mesa",
+        texto: "Item adicionado. Indo para Kit Festa na Mesa."
+      },
+      "Kit Festa na Mesa": {
+        proxima: "Doces",
+        texto: "Item adicionado. Indo para Doces e Sobremesas."
+      },
+      "Bolos": {
+        proxima: "Adicionais",
+        texto: "Item adicionado. Indo para Adicionais."
+      }
+    };
 
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
@@ -1154,31 +955,14 @@
         left: 0,
         behavior: "auto"
       });
-    });
 
-    const ordemCategorias = {
-      pegue: {
-        proxima: "mesa",
-        texto: "Item adicionado. Indo para Montagem de Mesa."
-      },
-      mesa: {
-        proxima: "festa",
-        texto: "Item adicionado. Indo para Kit Festa na Mesa."
-      },
-      festa: {
-        proxima: "doces",
-        texto: "Item adicionado. Indo para Doces e Sobremesas."
-      },
-      bolos: {
-        proxima: "adicionais",
-        texto: "Item adicionado. Indo para Adicionais."
-      }
-    };
+      carregarProdutos();
+    });
 
     function irParaOrcamento(event) {
       event.preventDefault();
 
-      const destino = document.getElementById("pegue");
+      const destino = document.getElementById("catalogo");
 
       if (destino) {
         destino.scrollIntoView({
@@ -1214,7 +998,9 @@
     }
 
     function formatarPreco(valor) {
-      return valor.toLocaleString("pt-BR", {
+      const numero = Number(valor) || 0;
+
+      return numero.toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL"
       });
@@ -1227,7 +1013,115 @@
       return `${partes[2]}/${partes[1]}/${partes[0]}`;
     }
 
-    function toggleItem(botao, nome, preco) {
+    function escaparTexto(texto) {
+      return String(texto || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function normalizarValor(valor) {
+      if (typeof valor === "number") return valor;
+
+      return Number(
+        String(valor || "0")
+          .replace("R$", "")
+          .replace(/\./g, "")
+          .replace(",", ".")
+          .trim()
+      ) || 0;
+    }
+
+    async function carregarProdutos() {
+      const status = document.getElementById("statusProdutos");
+      const container = document.getElementById("produtos-dinamicos");
+
+      try {
+        const resposta = await fetch(API_URL);
+        const produtos = await resposta.json();
+
+        if (!Array.isArray(produtos) || produtos.length === 0) {
+          status.textContent = "Nenhum produto encontrado na planilha.";
+          return;
+        }
+
+        const produtosValidos = produtos.filter(produto =>
+          produto.categoria && produto.produto
+        );
+
+        const grupos = produtosValidos.reduce((acc, produto) => {
+          const categoria = produto.categoria || "Outros";
+
+          if (!acc[categoria]) {
+            acc[categoria] = [];
+          }
+
+          acc[categoria].push(produto);
+          return acc;
+        }, {});
+
+        container.innerHTML = "";
+        mapaCategorias = {};
+
+        Object.keys(grupos).forEach((categoria, indice) => {
+          const idCategoria = `categoria-${indice}`;
+          mapaCategorias[categoria] = idCategoria;
+
+          const cards = grupos[categoria].map(produto => {
+            const nomeProduto = escaparTexto(produto.produto);
+            const nomeCompletoOriginal = `${produto.categoria} - ${produto.produto}`;
+            const nomeCompleto = escaparTexto(nomeCompletoOriginal);
+            const nomeCompletoJS = JSON.stringify(nomeCompletoOriginal);
+            const categoriaJS = JSON.stringify(produto.categoria);
+            const valor = normalizarValor(produto.valor);
+
+            const descricao = String(produto.descricao || "")
+              .split("\n")
+              .map(item => item.trim())
+              .filter(Boolean)
+              .map(item => `<li>${escaparTexto(item)}</li>`)
+              .join("");
+
+            return `
+              <div class="card">
+                <h3>${nomeProduto}</h3>
+                <div class="price">${formatarPreco(valor)}</div>
+                <ul>${descricao}</ul>
+                <button class="select-btn" onclick='toggleItem(this, ${nomeCompletoJS}, ${valor}, ${categoriaJS})'>Selecionar</button>
+              </div>
+            `;
+          }).join("");
+
+          container.innerHTML += `
+            <div class="section-title" id="${idCategoria}" style="margin-top: 54px; scroll-margin-top: 95px;">
+              <h2>${escaparTexto(categoria)}</h2>
+            </div>
+
+            <div class="cards">
+              ${cards}
+            </div>
+          `;
+        });
+
+        status.style.display = "none";
+
+        document.querySelectorAll(".select-btn, .small-btn").forEach(botao => {
+          botao.dataset.originalText = botao.textContent.trim();
+        });
+
+        document.querySelectorAll("button, a").forEach(elemento => {
+          elemento.removeEventListener("click", tocarSomClique);
+          elemento.addEventListener("click", tocarSomClique);
+        });
+      } catch (erro) {
+        status.textContent = "Não foi possível carregar os produtos. Confira a URL do Apps Script e a permissão da implantação.";
+        console.error(erro);
+      }
+    }
+
+    function toggleItem(botao, nome, preco, categoria) {
       const index = pedido.findIndex(item => item.nome === nome);
       const estaSelecionando = index === -1;
 
@@ -1240,6 +1134,8 @@
         if (card) {
           card.classList.add("selected");
         }
+
+        guiarParaProximaCategoria(categoria);
       } else {
         pedido.splice(index, 1);
         botao.textContent = botao.dataset.originalText || "Selecionar";
@@ -1252,22 +1148,15 @@
             card.classList.remove("selected");
           }
         }
+
+        mostrarToast("Item removido do carrinho.");
       }
 
       atualizarResumo();
-
-      if (estaSelecionando) {
-        guiarParaProximaCategoria(botao);
-      }
     }
 
-    function guiarParaProximaCategoria(botao) {
-      const secaoAtual = botao.closest("section");
-
-      if (!secaoAtual) return;
-
-      const idAtual = secaoAtual.id;
-      const dados = ordemCategorias[idAtual];
+    function guiarParaProximaCategoria(categoriaAtual) {
+      const dados = ordemCategorias[categoriaAtual];
 
       if (!dados) {
         mostrarToast("Item adicionado ao carrinho.");
@@ -1277,7 +1166,8 @@
       mostrarToast(dados.texto);
 
       setTimeout(() => {
-        const destino = document.getElementById(dados.proxima);
+        const idDestino = mapaCategorias[dados.proxima];
+        const destino = idDestino ? document.getElementById(idDestino) : null;
 
         if (destino) {
           destino.scrollIntoView({
@@ -1316,8 +1206,8 @@
 
       lista.innerHTML = pedido.map(item => `
         <div class="pedido-item">
-          <span>${item.nome} — ${formatarPreco(item.preco)}</span>
-          <button onclick="removerItem('${item.nome}')">Remover</button>
+          <span>${escaparTexto(item.nome)} — ${formatarPreco(item.preco)}</span>
+          <button onclick="removerItem('${escaparTexto(item.nome)}')">Remover</button>
         </div>
       `).join("");
 
@@ -1376,7 +1266,18 @@
       }
     }
 
-    function enviarWhatsApp() {
+    async function salvarPedidoNaPlanilha(dadosPedido) {
+      try {
+        await fetch(API_URL, {
+          method: "POST",
+          body: JSON.stringify(dadosPedido)
+        });
+      } catch (erro) {
+        console.error("Erro ao salvar pedido na planilha:", erro);
+      }
+    }
+
+    async function enviarWhatsApp() {
       if (pedido.length === 0) {
         alert("Selecione pelo menos um item antes de enviar o orçamento.");
         return;
@@ -1384,6 +1285,8 @@
 
       const total = pedido.reduce((soma, item) => soma + item.preco, 0);
 
+      const nomeCliente = document.getElementById("nomeCliente").value.trim();
+      const telefoneCliente = document.getElementById("telefoneCliente").value.trim();
       const dataFesta = document.getElementById("dataFesta").value;
       const horarioFesta = document.getElementById("horarioFesta").value;
       const temaFesta = document.getElementById("temaFesta").value.trim();
@@ -1393,31 +1296,40 @@
       const horarioTexto = horarioFesta ? horarioFesta : "Não informado";
       const temaTexto = temaFesta ? temaFesta : "Não informado";
       const observacoesTexto = observacoesFesta ? observacoesFesta : "Nenhuma observação informada";
+      const nomeTexto = nomeCliente || "Não informado";
+      const telefoneTexto = telefoneCliente || "Não informado";
 
       const itensTexto = pedido
         .map(item => `- ${item.nome}: ${formatarPreco(item.preco)}`)
         .join("\n");
 
+      await salvarPedidoNaPlanilha({
+        nome: nomeTexto,
+        telefone: telefoneTexto,
+        itens: itensTexto,
+        total: total,
+        dataFesta: dataTexto,
+        horarioFesta: horarioTexto,
+        tema: temaTexto,
+        observacoes: observacoesTexto
+      });
+
       const mensagem =
         `Olá! Gostaria de fazer um orçamento com os seguintes itens:\n\n` +
         `${itensTexto}\n\n` +
         `Total aproximado: ${formatarPreco(total)}\n\n` +
+        `Nome: ${nomeTexto}\n` +
+        `Telefone: ${telefoneTexto}\n` +
         `Data da festa: ${dataTexto}\n` +
         `Horário da festa: ${horarioTexto}\n` +
         `Tema da festa: ${temaTexto}\n` +
         `Observações: ${observacoesTexto}\n\n` +
-        `Meu nome:\n` +
         `Endereço/bairro:\n`;
 
-      const telefone = "5511974230782";
-      const link = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+      const link = `https://wa.me/${TELEFONE_WHATSAPP}?text=${encodeURIComponent(mensagem)}`;
 
       window.open(link, "_blank");
     }
-
-    document.querySelectorAll(".select-btn, .small-btn").forEach(botao => {
-      botao.dataset.originalText = botao.textContent.trim();
-    });
 
     document.querySelectorAll("button, a").forEach(elemento => {
       elemento.addEventListener("click", tocarSomClique);
