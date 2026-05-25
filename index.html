@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,22 +7,6 @@
   <title>Tudo de Helena</title>
 
   <meta name="description" content="Clique aqui e entre para fazer o orçamento, escolher os momentos de felicidades." />
-
-  <meta property="og:title" content="Tudo de Helena" />
-  <meta property="og:description" content="Clique aqui e entre para fazer o orçamento, escolher os momentos de felicidades." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://gatopreto494.github.io/Tudo_de_Helena/" />
-  <meta property="og:image" content="https://gatopreto494.github.io/Tudo_de_Helena/capa-whatsapp-v2.jpg" />
-  <meta property="og:image:secure_url" content="https://gatopreto494.github.io/Tudo_de_Helena/capa-whatsapp-v2.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="pt_BR" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tudo de Helena" />
-  <meta name="twitter:description" content="Clique aqui e entre para fazer o orçamento, escolher os momentos de felicidades." />
-  <meta name="twitter:image" content="https://gatopreto494.github.io/Tudo_de_Helena/capa-whatsapp-v2.jpg" />
 
   <style>
     :root {
@@ -75,7 +58,8 @@
 
     .hero {
       max-width: 920px;
-      background: rgba(255, 247, 251, .88);
+      width: 100%;
+      background: #ffffff;
       border: 1px solid var(--borda);
       border-radius: 28px;
       padding: 56px 28px;
@@ -96,8 +80,20 @@
       font-family: Arial, sans-serif;
       font-size: 1.15rem;
       max-width: 640px;
-      margin: auto;
+      margin: 14px auto;
       color: var(--texto-suave);
+    }
+
+    .admin-info {
+      font-family: Arial, sans-serif;
+      max-width: 720px;
+      margin: 22px auto 0;
+      padding: 14px 18px;
+      border-radius: 18px;
+      background: #fff7fb;
+      border: 1px dashed var(--borda);
+      color: var(--texto-suave);
+      font-size: .98rem;
     }
 
     nav {
@@ -137,10 +133,6 @@
       background: linear-gradient(180deg, var(--vinho), var(--vinho-escuro));
       transform: translateY(-2px);
       box-shadow: 0 10px 22px rgba(63, 37, 51, .22);
-    }
-
-    nav a:active {
-      transform: translateY(1px);
     }
 
     section {
@@ -263,11 +255,6 @@
       font-size: 1rem;
     }
 
-    .small-btn {
-      padding: 10px 16px;
-      white-space: nowrap;
-    }
-
     .select-btn:hover,
     .small-btn:hover,
     .whatsapp:hover,
@@ -276,51 +263,10 @@
       filter: brightness(1.05);
     }
 
-    .select-btn:active,
-    .small-btn:active,
-    .whatsapp:active,
-    .pedido-acoes button:active {
-      transform: translateY(1px);
-    }
-
     .select-btn.selected-btn,
     .small-btn.selected-btn {
       background: linear-gradient(180deg, var(--dourado-claro), var(--dourado));
       color: #4b1022;
-      box-shadow:
-        0 8px 16px rgba(63, 37, 51, .18),
-        inset 0 2px 0 rgba(255, 255, 255, .35),
-        inset 0 -3px 0 rgba(0,0,0,.12);
-    }
-
-    .menu-list {
-      max-width: 850px;
-      margin: auto;
-      display: grid;
-      gap: 14px;
-    }
-
-    .menu-item {
-      background: rgba(255, 247, 251, .96);
-      border: 1px solid var(--borda);
-      border-radius: 999px;
-      padding: 15px 22px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-      font-family: Arial, sans-serif;
-      box-shadow: 0 8px 22px rgba(63, 37, 51, .06);
-    }
-
-    .menu-item strong {
-      color: var(--vinho);
-      white-space: nowrap;
-    }
-
-    .menu-info {
-      flex: 1;
-      color: var(--texto-suave);
     }
 
     .cta {
@@ -359,32 +305,8 @@
       background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
       padding: 12px 20px;
       border-radius: 999px;
-      box-shadow:
-        0 10px 22px rgba(131, 58, 180, .22),
-        inset 0 2px 0 rgba(255, 255, 255, .25),
-        inset 0 -3px 0 rgba(0, 0, 0, .12);
+      box-shadow: 0 10px 22px rgba(131, 58, 180, .22);
       transition: all .2s ease;
-    }
-
-    .instagram-link:hover {
-      transform: translateY(-2px);
-      filter: brightness(1.05);
-    }
-
-    .instagram-link:active {
-      transform: translateY(1px);
-    }
-
-    .instagram-icon {
-      width: 22px;
-      height: 22px;
-      display: inline-flex;
-    }
-
-    .instagram-icon svg {
-      width: 22px;
-      height: 22px;
-      fill: white;
     }
 
     .dados-orcamento {
@@ -458,12 +380,6 @@
       line-height: 1.5;
     }
 
-    .campo input:focus,
-    .campo textarea:focus {
-      border-color: var(--vinho);
-      box-shadow: 0 0 0 3px rgba(255, 105, 180, .18);
-    }
-
     footer {
       text-align: center;
       padding: 35px 20px;
@@ -503,15 +419,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all .2s ease;
-    }
-
-    .carrinho-btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .carrinho-btn:active {
-      transform: translateY(1px);
     }
 
     .contador-carrinho {
@@ -560,15 +467,8 @@
     }
 
     @keyframes subir {
-      from {
-        transform: translateY(30px);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
 
     .pedido-topo {
@@ -594,10 +494,6 @@
       font-size: 1.4rem;
       font-weight: bold;
       cursor: pointer;
-      box-shadow:
-        0 8px 16px rgba(63, 37, 51, .22),
-        inset 0 2px 0 rgba(255,255,255,.18),
-        inset 0 -3px 0 rgba(0,0,0,.15);
     }
 
     .pedido-total {
@@ -657,19 +553,11 @@
     .limpar {
       background: linear-gradient(180deg, var(--fundo-2), var(--fundo));
       color: var(--vinho);
-      box-shadow:
-        0 10px 18px rgba(63, 37, 51, .14),
-        inset 0 2px 0 rgba(255,255,255,.35),
-        inset 0 -3px 0 rgba(0,0,0,.08);
     }
 
     .enviar {
       background: linear-gradient(180deg, #2edb6d 0%, var(--verde) 100%);
       color: white;
-      box-shadow:
-        0 12px 25px rgba(37, 211, 102, .25),
-        inset 0 2px 0 rgba(255, 255, 255, .35),
-        inset 0 -3px 0 rgba(0, 0, 0, .12);
     }
 
     .toast-guia {
@@ -698,34 +586,23 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    @media (max-width: 700px) {
-      nav {
-        gap: 10px;
-      }
-
-      nav a {
-        font-size: .9rem;
-        padding: 11px 15px;
-      }
-
-      .logo-hero {
-        width: min(360px, 96%);
-      }
-    }
-
     @media (max-width: 600px) {
-      .menu-item {
-        border-radius: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
       nav {
         position: static;
       }
 
       section {
         scroll-margin-top: 20px;
+      }
+
+      .hero {
+        background: #ffffff !important;
+        padding: 40px 20px;
+      }
+
+      .logo-hero {
+        width: min(300px, 98%);
+        max-height: 260px;
       }
 
       .pedido-box {
@@ -749,11 +626,6 @@
         bottom: 95px;
         border-radius: 18px;
       }
-
-      .logo-hero {
-        width: min(300px, 98%);
-        max-height: 260px;
-      }
     }
   </style>
 </head>
@@ -769,31 +641,72 @@
       <a class="whatsapp" href="#" onclick="irParaOrcamento(event)">
         Começar orçamento
       </a>
+
+      <div class="admin-info">
+        Para alterar produtos, descrições ou preços, edite diretamente a planilha. O site será atualizado automaticamente ao recarregar.
+      </div>
     </div>
   </header>
 
   <nav>
-    <a href="#catalogo">Catálogo</a>
+    <a href="#pegue">Pegue e Monte</a>
+    <a href="#mesa">Montagem</a>
+    <a href="#festa">Festa na Mesa</a>
+    <a href="#doces">Doces</a>
+    <a href="#bolos">Bolos</a>
+    <a href="#adicionais">Adicionais</a>
     <a href="#pagamento">Pagamento</a>
-    <a href="#finalizar">Finalizar</a>
   </nav>
 
-  <section id="catalogo">
+  <section id="pegue" data-categoria="Kit Pegue e Monte">
     <div class="section-title">
-      <h2>Catálogo</h2>
-      <p>Produtos carregados automaticamente da planilha Google Sheets.</p>
+      <h2>Kit Pegue e Monte</h2>
+      <p>Opções práticas para montar sua festa com charme e economia.</p>
     </div>
+    <div class="aviso">Clique em “Selecionar” nos itens desejados. O site te guia suavemente para a próxima categoria.</div>
+    <div class="cards" id="produtos-pegue"></div>
+  </section>
 
-    <div class="aviso">
-      Para alterar produtos, descrições ou preços, edite diretamente a planilha. O site será atualizado automaticamente ao recarregar.
+  <section id="mesa" data-categoria="Montagem de Mesa">
+    <div class="section-title">
+      <h2>Montagem de Mesa</h2>
+      <p>Soluções completas para uma decoração ainda mais especial.</p>
     </div>
+    <div class="cards" id="produtos-mesa"></div>
+  </section>
 
-    <div id="statusProdutos" class="aviso">
-      Carregando produtos...
+  <section id="festa" data-categoria="Kit Festa na Mesa">
+    <div class="section-title">
+      <h2>Kit Festa na Mesa</h2>
+      <p>Perfeito para comemorações compactas e cheias de encanto.</p>
     </div>
+    <div class="cards" id="produtos-festa"></div>
+  </section>
 
-    <div id="produtos-dinamicos">
+  <section id="doces" data-categoria="Doces">
+    <div class="section-title">
+      <h2>Doces e Sobremesas</h2>
+      <p>A pessoa pode escolher mais de uma opção e seguir quando desejar.</p>
     </div>
+    <div class="aviso">Você pode selecionar quantas sobremesas quiser.</div>
+    <div class="cards" id="produtos-doces"></div>
+  </section>
+
+  <section id="bolos" data-categoria="Bolos">
+    <div class="section-title">
+      <h2>Bolos Especiais</h2>
+      <p>Formato 3 — aproximadamente 2,5 kg a 3 kg.</p>
+    </div>
+    <div class="cards" id="produtos-bolos"></div>
+  </section>
+
+  <section id="adicionais" data-categoria="Adicionais">
+    <div class="section-title">
+      <h2>Adicionais</h2>
+      <p>Finalize com doces, salgados ou outros complementos.</p>
+    </div>
+    <div class="aviso">Você pode selecionar mais de um adicional.</div>
+    <div class="cards" id="produtos-adicionais"></div>
   </section>
 
   <section id="pagamento">
@@ -831,16 +744,6 @@
 
         <div class="campos">
           <div class="campo">
-            <label for="nomeCliente">Seu nome</label>
-            <input type="text" id="nomeCliente" placeholder="Digite seu nome" />
-          </div>
-
-          <div class="campo">
-            <label for="telefoneCliente">Seu telefone</label>
-            <input type="tel" id="telefoneCliente" placeholder="Ex: (11) 99999-9999" />
-          </div>
-
-          <div class="campo">
             <label for="dataFesta">Data da festa</label>
             <input type="date" id="dataFesta" />
           </div>
@@ -868,12 +771,7 @@
 
       <br>
 
-      <a class="instagram-link" href="https://www.instagram.com/tudo.dehelena/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Tudo de Helena">
-        <span class="instagram-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2C5.6 4 4 5.6 4 7.6v8.8c0 2 1.6 3.6 3.6 3.6h8.8c2 0 3.6-1.6 3.6-3.6V7.6c0-2-1.6-3.6-3.6-3.6H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
-          </svg>
-        </span>
+      <a class="instagram-link" href="https://www.instagram.com/tudo.dehelena/" target="_blank" rel="noopener noreferrer">
         @tudo.dehelena
       </a>
     </div>
@@ -915,29 +813,41 @@
   </div>
 
   <script>
-    const API_URL = "https://script.google.com/macros/s/AKfycbzCZOi3sBG78iZP8VYbUUQ54edtH0dfx18vOEmU2mYHsm8rNgZXp1rsFvzyYKnfQNtU9A/exec";
-    const TELEFONE_WHATSAPP = "5511974230782";
-
     let pedido = [];
     let audioContext;
-    let mapaCategorias = {};
 
-    const ordemCategorias = {
+    const API_URL = "https://script.google.com/macros/s/AKfycbzCZOi3sBG78iZP8VYbUUQ54edtH0dfx18vOEmU2mYHsm8rNgZXp1rsFvzyYKnfQNtU9A/exec";
+
+    const categoriasConfig = {
       "Kit Pegue e Monte": {
-        proxima: "Montagem de Mesa",
+        container: "produtos-pegue",
+        proxima: "mesa",
         texto: "Item adicionado. Indo para Montagem de Mesa."
       },
       "Montagem de Mesa": {
-        proxima: "Kit Festa na Mesa",
+        container: "produtos-mesa",
+        proxima: "festa",
         texto: "Item adicionado. Indo para Kit Festa na Mesa."
       },
       "Kit Festa na Mesa": {
-        proxima: "Doces",
+        container: "produtos-festa",
+        proxima: "doces",
         texto: "Item adicionado. Indo para Doces e Sobremesas."
       },
+      "Doces": {
+        container: "produtos-doces",
+        proxima: "bolos",
+        texto: "Item adicionado. Indo para Bolos Especiais."
+      },
       "Bolos": {
-        proxima: "Adicionais",
+        container: "produtos-bolos",
+        proxima: "adicionais",
         texto: "Item adicionado. Indo para Adicionais."
+      },
+      "Adicionais": {
+        container: "produtos-adicionais",
+        proxima: "finalizar",
+        texto: "Item adicionado. Indo para finalizar o orçamento."
       }
     };
 
@@ -955,14 +865,106 @@
         left: 0,
         behavior: "auto"
       });
-
-      carregarProdutos();
     });
+
+    function limparTextoParaHTML(texto) {
+      return String(texto ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function normalizarCategoria(categoria) {
+      const texto = String(categoria ?? "").trim();
+      const textoLower = texto.toLowerCase();
+
+      if (textoLower.includes("pegue")) return "Kit Pegue e Monte";
+      if (textoLower.includes("montagem")) return "Montagem de Mesa";
+      if (textoLower.includes("festa")) return "Kit Festa na Mesa";
+      if (textoLower.includes("doce")) return "Doces";
+      if (textoLower.includes("bolo")) return "Bolos";
+      if (textoLower.includes("adicional")) return "Adicionais";
+
+      return texto;
+    }
+
+    async function carregarProdutos() {
+      try {
+        Object.values(categoriasConfig).forEach(config => {
+          const container = document.getElementById(config.container);
+          if (container) container.innerHTML = "";
+        });
+
+        const resposta = await fetch(API_URL);
+        const produtos = await resposta.json();
+
+        produtos.forEach(produto => {
+          const categoria = normalizarCategoria(produto.categoria);
+          const config = categoriasConfig[categoria];
+
+          if (!config) return;
+
+          const container = document.getElementById(config.container);
+          if (!container) return;
+
+          const nomeProduto = limparTextoParaHTML(produto.produto);
+          const categoriaProduto = limparTextoParaHTML(categoria);
+          const descricaoBruta = String(produto.descricao ?? "");
+          const valor = Number(produto.valor) || 0;
+          const nomePedido = `${categoria} - ${produto.produto}`;
+
+          const descricaoFormatada = descricaoBruta
+            .split(/\r?\n/)
+            .map(item => item.trim())
+            .filter(item => item.length > 0)
+            .map(item => `<li>${limparTextoParaHTML(item)}</li>`)
+            .join("");
+
+          container.innerHTML += `
+            <div class="card">
+              <h3>${nomeProduto}</h3>
+              <div class="price">${formatarPreco(valor)}</div>
+              <ul>${descricaoFormatada}</ul>
+              <button
+                class="select-btn"
+                data-nome="${limparTextoParaHTML(nomePedido)}"
+                data-categoria="${categoriaProduto}"
+                data-valor="${valor}">
+                Selecionar
+              </button>
+            </div>
+          `;
+        });
+
+        document.querySelectorAll(".select-btn").forEach(botao => {
+          botao.dataset.originalText = botao.textContent.trim();
+
+          botao.addEventListener("click", function() {
+            toggleItem(
+              this,
+              this.dataset.nome,
+              Number(this.dataset.valor),
+              this.dataset.categoria
+            );
+          });
+        });
+
+        document.querySelectorAll("button, a").forEach(elemento => {
+          elemento.addEventListener("click", tocarSomClique);
+        });
+
+      } catch (erro) {
+        mostrarToast("Não foi possível carregar os produtos da planilha.");
+        console.error(erro);
+      }
+    }
 
     function irParaOrcamento(event) {
       event.preventDefault();
 
-      const destino = document.getElementById("catalogo");
+      const destino = document.getElementById("pegue");
 
       if (destino) {
         destino.scrollIntoView({
@@ -992,15 +994,11 @@
 
         oscilador.start();
         oscilador.stop(audioContext.currentTime + 0.08);
-      } catch (erro) {
-        console.log("Som de clique não pôde ser reproduzido.");
-      }
+      } catch (erro) {}
     }
 
     function formatarPreco(valor) {
-      const numero = Number(valor) || 0;
-
-      return numero.toLocaleString("pt-BR", {
+      return Number(valor).toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL"
       });
@@ -1011,114 +1009,6 @@
 
       const partes = data.split("-");
       return `${partes[2]}/${partes[1]}/${partes[0]}`;
-    }
-
-    function escaparTexto(texto) {
-      return String(texto || "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
-
-    function normalizarValor(valor) {
-      if (typeof valor === "number") return valor;
-
-      return Number(
-        String(valor || "0")
-          .replace("R$", "")
-          .replace(/\./g, "")
-          .replace(",", ".")
-          .trim()
-      ) || 0;
-    }
-
-    async function carregarProdutos() {
-      const status = document.getElementById("statusProdutos");
-      const container = document.getElementById("produtos-dinamicos");
-
-      try {
-        const resposta = await fetch(API_URL);
-        const produtos = await resposta.json();
-
-        if (!Array.isArray(produtos) || produtos.length === 0) {
-          status.textContent = "Nenhum produto encontrado na planilha.";
-          return;
-        }
-
-        const produtosValidos = produtos.filter(produto =>
-          produto.categoria && produto.produto
-        );
-
-        const grupos = produtosValidos.reduce((acc, produto) => {
-          const categoria = produto.categoria || "Outros";
-
-          if (!acc[categoria]) {
-            acc[categoria] = [];
-          }
-
-          acc[categoria].push(produto);
-          return acc;
-        }, {});
-
-        container.innerHTML = "";
-        mapaCategorias = {};
-
-        Object.keys(grupos).forEach((categoria, indice) => {
-          const idCategoria = `categoria-${indice}`;
-          mapaCategorias[categoria] = idCategoria;
-
-          const cards = grupos[categoria].map(produto => {
-            const nomeProduto = escaparTexto(produto.produto);
-            const nomeCompletoOriginal = `${produto.categoria} - ${produto.produto}`;
-            const nomeCompleto = escaparTexto(nomeCompletoOriginal);
-            const nomeCompletoJS = JSON.stringify(nomeCompletoOriginal);
-            const categoriaJS = JSON.stringify(produto.categoria);
-            const valor = normalizarValor(produto.valor);
-
-            const descricao = String(produto.descricao || "")
-              .split("\n")
-              .map(item => item.trim())
-              .filter(Boolean)
-              .map(item => `<li>${escaparTexto(item)}</li>`)
-              .join("");
-
-            return `
-              <div class="card">
-                <h3>${nomeProduto}</h3>
-                <div class="price">${formatarPreco(valor)}</div>
-                <ul>${descricao}</ul>
-                <button class="select-btn" onclick='toggleItem(this, ${nomeCompletoJS}, ${valor}, ${categoriaJS})'>Selecionar</button>
-              </div>
-            `;
-          }).join("");
-
-          container.innerHTML += `
-            <div class="section-title" id="${idCategoria}" style="margin-top: 54px; scroll-margin-top: 95px;">
-              <h2>${escaparTexto(categoria)}</h2>
-            </div>
-
-            <div class="cards">
-              ${cards}
-            </div>
-          `;
-        });
-
-        status.style.display = "none";
-
-        document.querySelectorAll(".select-btn, .small-btn").forEach(botao => {
-          botao.dataset.originalText = botao.textContent.trim();
-        });
-
-        document.querySelectorAll("button, a").forEach(elemento => {
-          elemento.removeEventListener("click", tocarSomClique);
-          elemento.addEventListener("click", tocarSomClique);
-        });
-      } catch (erro) {
-        status.textContent = "Não foi possível carregar os produtos. Confira a URL do Apps Script e a permissão da implantação.";
-        console.error(erro);
-      }
     }
 
     function toggleItem(botao, nome, preco, categoria) {
@@ -1134,8 +1024,6 @@
         if (card) {
           card.classList.add("selected");
         }
-
-        guiarParaProximaCategoria(categoria);
       } else {
         pedido.splice(index, 1);
         botao.textContent = botao.dataset.originalText || "Selecionar";
@@ -1148,15 +1036,18 @@
             card.classList.remove("selected");
           }
         }
-
-        mostrarToast("Item removido do carrinho.");
       }
 
       atualizarResumo();
+
+      if (estaSelecionando) {
+        guiarParaProximaCategoria(categoria);
+      }
     }
 
     function guiarParaProximaCategoria(categoriaAtual) {
-      const dados = ordemCategorias[categoriaAtual];
+      const categoria = normalizarCategoria(categoriaAtual);
+      const dados = categoriasConfig[categoria];
 
       if (!dados) {
         mostrarToast("Item adicionado ao carrinho.");
@@ -1166,8 +1057,7 @@
       mostrarToast(dados.texto);
 
       setTimeout(() => {
-        const idDestino = mapaCategorias[dados.proxima];
-        const destino = idDestino ? document.getElementById(idDestino) : null;
+        const destino = document.getElementById(dados.proxima);
 
         if (destino) {
           destino.scrollIntoView({
@@ -1206,8 +1096,8 @@
 
       lista.innerHTML = pedido.map(item => `
         <div class="pedido-item">
-          <span>${escaparTexto(item.nome)} — ${formatarPreco(item.preco)}</span>
-          <button onclick="removerItem('${escaparTexto(item.nome)}')">Remover</button>
+          <span>${limparTextoParaHTML(item.nome)} — ${formatarPreco(item.preco)}</span>
+          <button onclick="removerItem('${limparTextoParaHTML(item.nome)}')">Remover</button>
         </div>
       `).join("");
 
@@ -1217,10 +1107,8 @@
     function removerItem(nome) {
       pedido = pedido.filter(item => item.nome !== nome);
 
-      document.querySelectorAll("button").forEach(botao => {
-        const onclick = botao.getAttribute("onclick");
-
-        if (onclick && onclick.includes(nome)) {
+      document.querySelectorAll("button[data-nome]").forEach(botao => {
+        if (botao.dataset.nome === nome) {
           botao.classList.remove("selected-btn");
           botao.textContent = botao.dataset.originalText || "Selecionar";
 
@@ -1273,7 +1161,7 @@
           body: JSON.stringify(dadosPedido)
         });
       } catch (erro) {
-        console.error("Erro ao salvar pedido na planilha:", erro);
+        console.error("Não foi possível salvar o pedido na planilha.", erro);
       }
     }
 
@@ -1285,8 +1173,6 @@
 
       const total = pedido.reduce((soma, item) => soma + item.preco, 0);
 
-      const nomeCliente = document.getElementById("nomeCliente").value.trim();
-      const telefoneCliente = document.getElementById("telefoneCliente").value.trim();
       const dataFesta = document.getElementById("dataFesta").value;
       const horarioFesta = document.getElementById("horarioFesta").value;
       const temaFesta = document.getElementById("temaFesta").value.trim();
@@ -1296,16 +1182,14 @@
       const horarioTexto = horarioFesta ? horarioFesta : "Não informado";
       const temaTexto = temaFesta ? temaFesta : "Não informado";
       const observacoesTexto = observacoesFesta ? observacoesFesta : "Nenhuma observação informada";
-      const nomeTexto = nomeCliente || "Não informado";
-      const telefoneTexto = telefoneCliente || "Não informado";
 
       const itensTexto = pedido
         .map(item => `- ${item.nome}: ${formatarPreco(item.preco)}`)
         .join("\n");
 
       await salvarPedidoNaPlanilha({
-        nome: nomeTexto,
-        telefone: telefoneTexto,
+        nome: "",
+        telefone: "",
         itens: itensTexto,
         total: total,
         dataFesta: dataTexto,
@@ -1318,22 +1202,20 @@
         `Olá! Gostaria de fazer um orçamento com os seguintes itens:\n\n` +
         `${itensTexto}\n\n` +
         `Total aproximado: ${formatarPreco(total)}\n\n` +
-        `Nome: ${nomeTexto}\n` +
-        `Telefone: ${telefoneTexto}\n` +
         `Data da festa: ${dataTexto}\n` +
         `Horário da festa: ${horarioTexto}\n` +
         `Tema da festa: ${temaTexto}\n` +
         `Observações: ${observacoesTexto}\n\n` +
+        `Meu nome:\n` +
         `Endereço/bairro:\n`;
 
-      const link = `https://wa.me/${TELEFONE_WHATSAPP}?text=${encodeURIComponent(mensagem)}`;
+      const telefone = "5511974230782";
+      const link = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 
       window.open(link, "_blank");
     }
 
-    document.querySelectorAll("button, a").forEach(elemento => {
-      elemento.addEventListener("click", tocarSomClique);
-    });
+    carregarProdutos();
   </script>
 
 </body>
