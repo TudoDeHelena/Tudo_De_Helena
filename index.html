@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tudo de Helena</title>
+
+  <meta name="description" content="Clique aqui e entre para fazer o orçamento, escolher os momentos de felicidades." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <img class="logo-hero" src="logo.png" alt="Tudo de Helena">
+
+      <p>Escolha os itens para sua comemoração e envie seu orçamento de forma prática pelo WhatsApp.</p>
+
+      <a class="whatsapp" href="#" id="comecarOrcamento">
+        Começar orçamento
+      </a>
+
+      <div class="admin-info">
+        Para alterar produtos, descrições ou preços, edite diretamente a planilha. O site será atualizado automaticamente ao recarregar.
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#pegue">Pegue e Monte</a>
+    <a href="#mesa">Montagem</a>
+    <a href="#festa">Festa na Mesa</a>
+    <a href="#doces">Doces</a>
+    <a href="#bolos">Bolos</a>
+    <a href="#adicionais">Adicionais</a>
+    <a href="#pagamento">Pagamento</a>
+  </nav>
+
+  <section id="pegue" data-categoria="Kit Pegue e Monte">
+    <div class="section-title">
+      <h2>Kit Pegue e Monte</h2>
+      <p>Opções práticas para montar sua festa com charme e economia.</p>
+    </div>
+    <div class="aviso">Clique em “Selecionar” nos itens desejados. O site te guia suavemente para a próxima categoria.</div>
+    <div class="cards" id="produtos-pegue"></div>
+  </section>
+
+  <section id="mesa" data-categoria="Montagem de Mesa">
+    <div class="section-title">
+      <h2>Montagem de Mesa</h2>
+      <p>Soluções completas para uma decoração ainda mais especial.</p>
+    </div>
+    <div class="cards" id="produtos-mesa"></div>
+  </section>
+
+  <section id="festa" data-categoria="Kit Festa na Mesa">
+    <div class="section-title">
+      <h2>Kit Festa na Mesa</h2>
+      <p>Perfeito para comemorações compactas e cheias de encanto.</p>
+    </div>
+    <div class="cards" id="produtos-festa"></div>
+  </section>
+
+  <section id="doces" data-categoria="Doces">
+    <div class="section-title">
+      <h2>Doces e Sobremesas</h2>
+      <p>A pessoa pode escolher mais de uma opção e seguir quando desejar.</p>
+    </div>
+    <div class="aviso">Você pode selecionar quantas sobremesas quiser.</div>
+    <div class="cards" id="produtos-doces"></div>
+  </section>
+
+  <section id="bolos" data-categoria="Bolos">
+    <div class="section-title">
+      <h2>Bolos Especiais</h2>
+      <p>Formato 3 — aproximadamente 2,5 kg a 3 kg.</p>
+    </div>
+    <div class="cards" id="produtos-bolos"></div>
+  </section>
+
+  <section id="adicionais" data-categoria="Adicionais">
+    <div class="section-title">
+      <h2>Adicionais</h2>
+      <p>Finalize com doces, salgados ou outros complementos.</p>
+    </div>
+    <div class="aviso">Você pode selecionar mais de um adicional.</div>
+    <div class="cards" id="produtos-adicionais"></div>
+  </section>
+
+  <section id="pagamento">
+    <div class="section-title">
+      <h2>Formas de Pagamento</h2>
+      <p>Escolha a melhor opção para confirmar seu pedido.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Pagamento</h3>
+        <ul>
+          <li>Dinheiro</li>
+          <li>Pix</li>
+          <li>Cartão débito</li>
+          <li>Cartão crédito com acréscimo de taxa</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Deslocamento</h3>
+        <p>Consultar valor de deslocamento da montagem de acordo com a localização.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="finalizar">
+    <div class="section-title">
+      <h2>Finalize seu orçamento</h2>
+      <p>Preencha os dados da festa se já souber. Esses campos são opcionais.</p>
+
+      <div class="dados-orcamento">
+        <h3>Dados da festa</h3>
+        <p>Essas informações ajudam no atendimento, mas não são obrigatórias para pedir orçamento.</p>
+
+        <div class="campos">
+          <div class="campo">
+            <label for="dataFesta">Data da festa</label>
+            <input type="date" id="dataFesta" />
+          </div>
+
+          <div class="campo">
+            <label for="horarioFesta">Horário da festa</label>
+            <input type="time" id="horarioFesta" />
+          </div>
+
+          <div class="campo campo-grande">
+            <label for="temaFesta">Tema da festa</label>
+            <input type="text" id="temaFesta" placeholder="Ex: Princesas, Fazendinha, Barbie, Futebol..." />
+          </div>
+
+          <div class="campo campo-grande">
+            <label for="observacoesFesta">Observações</label>
+            <textarea id="observacoesFesta" placeholder="Ex: quantidade de convidados, cores desejadas, local da festa, dúvidas ou pedidos especiais..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button class="whatsapp" type="button" data-abrir-pedido>
+        Ver meu pedido
+      </button>
+
+      <br>
+
+      <a class="instagram-link" href="https://www.instagram.com/tudo.dehelena/" target="_blank" rel="noopener noreferrer">
+        @tudo.dehelena
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Tudo de Helena — Decoração de festas, doces, bolos e kits pegue e monte.</p>
+  </footer>
+
+  <button class="carrinho-btn" type="button" data-abrir-pedido aria-label="Abrir carrinho">
+    🛒
+    <span class="contador-carrinho" id="contadorCarrinho">0</span>
+  </button>
+
+  <div class="toast-guia" id="toastGuia">
+    Item adicionado.
+  </div>
+
+  <div class="fundo-pedido" id="fundoPedido">
+    <div class="pedido-box">
+      <div class="pedido-topo">
+        <h3>Meu pedido</h3>
+        <button class="fechar-pedido" type="button" id="fecharPedido">×</button>
+      </div>
+
+      <div class="pedido-total" id="pedidoTotal">
+        Total: R$0,00
+      </div>
+
+      <div class="pedido-lista" id="pedidoLista">
+        Nenhum item selecionado ainda.
+      </div>
+
+      <div class="pedido-acoes">
+        <button class="limpar" type="button" id="limparPedido">Limpar pedido</button>
+        <button class="enviar" type="button" id="enviarWhatsApp">Enviar pelo WhatsApp</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js" defer></script>
+
+</body>
+</html>
